@@ -1,0 +1,23 @@
+{
+  "name": "gmpvpc-test",
+  "version": "0.0.1",
+  "description": "This software create an express server and display the data of the IT SensorTag",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./front,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gautier Rouleau, Gwénolé Le Hénaff, Simon Arques",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4",
+    "three": "^0.89.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  }
+}
